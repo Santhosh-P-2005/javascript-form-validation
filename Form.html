@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link href="FormStyle.css" rel="stylesheet">
+    <script src="Formjs.js" defer>
+    </script>
+</head>
+<body>
+    <form action="return compare();">
+        <fieldset>
+            <lable for="name">Name</lable><br>
+            <input type="text" id="username" required><br>
+            <p id="name"></p><br>
+
+            <lable for="mail">E-mail</lable><br>
+            <input type="text" id="mail"   pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required><br>
+            <p id="email"></p><br>
+        
+            <lable for="password">Password</lable><br>
+            <input type="password" id="password1" required><br><br>
+
+            <lable for="cpassword">Confirm Password</lable><br>
+            <input type="password" id="cpassword" required><br>
+            <p id="pass"></p><br>
+
+            <input type="checkbox"  id="show">
+            <label for="show">Show Password</label><br><br>
+
+            <label for="ph-no">Phone number</label><br>
+            <input type="text" id="ph-no"  minlength="10" maxlength="10"><br><br>
+
+            <label for="gen">Gender</label><br>
+            <input type="radio">Male<input type="radio">Female<br><br>
+
+            <lable for="p-name" >Product Name</lable><br>
+            <input type="text" id="P-name" required><br>
+            <p id="pro"></p><br>
+
+            <lable for="date">Expiring date</lable><br>
+            <input type="date" id="date" required><br>
+            <p id="date"></p><br>
+
+            <input type="checkbox" id="check_input" required>
+            <lable for="check" id="check">accept terms and conditions</lable><br>
+            <p id="terms"></p><br>
+
+            <button type="submit" id="sub">Submit</button>
+
+        </fieldset>
+
+    </form>
+
+    
+</body>
+</html>
